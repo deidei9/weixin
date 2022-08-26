@@ -23,8 +23,7 @@
 # 金句中文，如果设置了，则会显示这里的，如果为空，默认会读取金山的每日金句
 "note_ch": "",
 # 金句英文
-"note_en": ""
-}
+"note_en": "
 wx.request({
       url: 'https://api.tianapi.com/caihongpi/index', 
       method: 'POST', 
@@ -43,3 +42,4 @@ wx.request({
         console.log(err)
       }
     })
+}
