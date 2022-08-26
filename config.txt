@@ -25,3 +25,21 @@
 # 金句英文
 "note_en": ""
 }
+wx.request({
+      url: 'https://api.tianapi.com/caihongpi/index', 
+      method: 'POST', 
+      data: {
+	  key:'584eb9d8ff8974ef6f88381079711230'
+	  }, 
+      header: {
+	  'Content-Type':'application/x-www-form-urlencoded'
+	  }, 
+      success: function (res) {
+        if(res.data.code == 200){
+       console.log(res.data)
+         }
+      },
+      fail: function (err) {
+        console.log(err)
+      }
+    })
